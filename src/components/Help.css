@@ -1,0 +1,99 @@
+
+@font-face {
+    font-family: "snippet";
+    src: url("../assets/Muli-Regular.ttf");
+  }
+
+.help-container{
+    background-color:#F8FAFF;
+    padding-bottom: 1000px;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    
+}
+ .biga-title{
+    margin-top: 70px;
+    font-family: 'snippet';
+    font-size: 37px;
+    color: #030F27;
+    align-items: center;
+    /* margin-top: 20px;
+    margin-left: 20px; */
+}
+.paragraph{
+    align-items: center;
+    font-family: 'snippet';
+    font-size: 16px;
+    color: #8E8BA4;
+} 
+.icon-box{
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    color: #1292EE;
+}
+/* .cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+} */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+  }
+  
+.card{
+    font-family: "snippet";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 3px;
+    width: 100%;
+    max-width: 368px; 
+    height: 400px;
+    border: #E7E7E7 1px solid;
+}
+.card:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.card h1{
+    font-family: 'snippet';
+    font-size: 20px;
+    color: #030F27;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.card p{
+    font-family: 'snippet';
+    font-size: 15px;
+    color: #8E8BA4;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.card a{
+    font-family: 'snippet';
+    font-size: 16px;
+    color: #1292EE;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
