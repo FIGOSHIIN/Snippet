@@ -1,27 +1,8 @@
-// import React from 'react'
-// import './Section.css';
-// import fasset from '../assets/asset1.webp'
-// import sasset from '../assets/asset2.webp'
-
-// export default function Section() {
-//   return (
-//     <div className='section-container'>
-//       <div className='fimg-container'>
-//         <img className='fimg' src={fasset} alt="" />
-//         <img className='simg' src={sasset} alt="" />
-//       </div>
-//       <div className='dashboard-container'>
-//         <p><span>____             </span>    Your success is our motivation</p>
-//         <h1>We are passionate about using<br/> technology to solve problems<br/> and create value</h1>
-        
-//       </div>
-//     </div>
-//   )
-// }
 import React from 'react'
 import './Section.css'
 import fasset from '../assets/asset1.webp'
 import sasset from '../assets/asset2.webp'
+
 
 export default function Section() {
   return (
