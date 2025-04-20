@@ -5,7 +5,7 @@
 .title{
     display: flex;
     font-family: "snippet";
-    font-size: larger;
+    font-size: 23px;
     justify-content: center;
     margin-top: 80px;
     color: #030F27;
@@ -105,6 +105,9 @@ img{
 }
 /* Responsive */
 @media(max-width: 1167px) {
+  .title{
+    font-size: 18px;
+  }
   .content-wrapper {
     flex-direction: column;
     text-align: center; 
@@ -129,6 +132,10 @@ img{
   
 }
 @media (max-width: 1055px) {
+
+  .title{
+    font-size: 18px;
+  }
   .img-container{
     display: flex;
     flex-direction: column;
@@ -153,6 +160,9 @@ img{
   }
 
 @media (max-width: 450px){
+  .title{
+    font-size: 18px;
+  }
   .title{
     display: flex;
     justify-content: center;
@@ -193,12 +203,7 @@ img{
 }
 @media (max-width: 600px){
   .title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-    font-size: 8px;
-    margin-left: 2px;
+    font-size: 18px;
   }
     .content-wrapper {
       flex-direction: column;
