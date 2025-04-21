@@ -3,16 +3,26 @@ import './Help.css';
 import ficon from '../assets/icon-1.png'
 import sicon from '../assets/icon-2.png'
 import ricon from '../assets/react.svg'
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 export default function Help() {
+  useEffect(() => {
+              AOS.init({
+                duration: 1000, 
+                once: true,    
+              });
+            }, []);
   return (
-    <div className='help-container'>
+    <div className='help-container' data-aos="fade-up">
       <div className='title'>
         <h1 className='biga-title'>We can help you bring your idea to life<br/></h1>
         <p className='paragraph'><br/>From idea to viable product, we can help you define your,<br/> goals and create a roadmap to the best user experience<br/> solution</p>
       </div>
 
-      <div className='cards'>
+      <div className='cards' data-aos="fade-up">
           <div className='card'>
             <img className='icon-box' src={ricon} alt="" />
             <h1>Consulting</h1>

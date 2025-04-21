@@ -21,8 +21,7 @@
     font-size: 37px;
     color: #030F27;
     align-items: center;
-    /* margin-top: 20px;
-    margin-left: 20px; */
+    
 }
 .paragraph{
     align-items: center;
@@ -39,10 +38,7 @@
     width: 50px;
     color: #1292EE;
 }
-/* .cards{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-} */
+
 .cards {
     display: flex;
     justify-content: center;

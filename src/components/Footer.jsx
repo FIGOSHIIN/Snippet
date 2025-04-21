@@ -1,24 +1,34 @@
 import React from 'react'
 import './Footer.css'
-import bgcity from '../assets/bg-city1.webp'
 import env from '../assets/env.png'
 import map from '../assets/map.png'
 import message from '../assets/message.png'
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Footer() {
+
+    useEffect(() => {
+          AOS.init({
+            duration: 1000, 
+            once: true,    
+          });
+        }, []);
+
   return (
-    <div className='footer'>
-        <div className='bgcity' >
+    <div className='footerr' >
+        <div className='bgcity' data-aos="fade-up">
             <div className='bgcity-overlay'>
                 <h1>Let's discuss how we can work together</h1>
                 <p>Ready to start your project? We would love to hear from you.<br/> Our team of experts is ready to help you bring your digital<br/> projects to life.</p>
             </div>
         </div>
-        <div className='text-part'>
+        <div className='text-part'data-aos="fade-up">
             <h1>CONTACT US, YOU WILL NOT BE DISAPPOINTED</h1>
             <p>Don't hesitate to get in touch with us – we would be happy<br/> to discuss your needs and goals in more detail. Contact us<br/> today and let's start a conversation!</p>
         </div>
-        <div className='card-part'>
+        <div className='card-part'data-aos="fade-up">
             <div className='fcard'>
                 <img src={map} alt="" className='ficon'/>
                 <div className='text-container'>

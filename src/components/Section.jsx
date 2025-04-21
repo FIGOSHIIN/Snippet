@@ -2,17 +2,28 @@ import React from 'react'
 import './Section.css'
 import fasset from '../assets/asset1.webp'
 import sasset from '../assets/asset2.webp'
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 
 export default function Section() {
+
+  useEffect(() => {
+                AOS.init({
+                  duration: 1000, 
+                  once: true,    
+                });
+              }, []); 
+
   return (
-    <div className='section-container'>
-      <div className='fimg-container'>
+    <div className='section-container' >
+      <div className='fimg-container' data-aos="fade-up">
         <img className='fimg' src={fasset} alt="" />
         <img className='simg' src={sasset} alt="" />
       </div>
 
-      <div className='dashboard-container'>
+      <div className='dashboard-container' data-aos="fade-up">
         <p><span>____               </span> Your success is our motivation</p>
         <h1>
           We are passionate about using<br />
@@ -21,7 +32,7 @@ export default function Section() {
         </h1>
 
         {/* Mini Dashboard Starts Here */}
-        <div className="services">
+        <div className="services" data-aos="fade-up">
           {[
             { name: "Websites", percent: 90, color: "cyan" },
             { name: "E-Commerce", percent: 80, color: "purple" },
